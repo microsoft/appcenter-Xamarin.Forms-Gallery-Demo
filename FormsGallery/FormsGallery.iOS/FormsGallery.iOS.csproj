@@ -143,13 +143,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>4.3.0.908675</Version>
+      <Version>4.7.0.1260</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.TestCloud.Agent">
       <Version>0.21.9</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>4.3.0.908675</Version>
+      <Version>4.7.0.1260</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="..\FormsGallery.Shared\FormsGallery.Shared.projitems" Label="Shared" />
