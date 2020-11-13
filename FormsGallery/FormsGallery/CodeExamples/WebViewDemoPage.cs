@@ -19,7 +19,7 @@ namespace FormsGallery.CodeExamples
             {
                 Source = new UrlWebViewSource
                 {
-                    Url = "https://www.xamarin.com/"
+                    Url = "https://www.google.com"
                 },
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
