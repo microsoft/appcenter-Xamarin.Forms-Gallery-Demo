@@ -13,6 +13,20 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsGallery.Shared", "Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsGallery.UITest", "FormsGallery.UITest\FormsGallery.UITest.csproj", "{6B714118-62C0-4E7F-A3A3-148B9C29ED76}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "upload scripts", "upload scripts", "{8F533580-8121-4F00-9C5C-FC8EAF167D95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ios", "ios", "{0D67768C-817A-47C4-BB9C-6549F6B7E550}"
+	ProjectSection(SolutionItems) = preProject
+		ios.sh = ios.sh
+		FormsGallery\FormsGallery.iOS\appcenter-post-build.sh = FormsGallery\FormsGallery.iOS\appcenter-post-build.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "android", "android", "{F1F3CA3A-3D9F-40EB-9993-4D1AD6DB5A34}"
+	ProjectSection(SolutionItems) = preProject
+		FormsGallery\FormsGallery.Android\appcenter-post-build.sh = FormsGallery\FormsGallery.Android\appcenter-post-build.sh
+		android.sh = android.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		FormsGallery\FormsGallery.Shared\FormsGallery.Shared.projitems*{29ae58f7-406f-4d66-bbec-2bcf05dc1d8d}*SharedItemsImports = 4
@@ -313,5 +327,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D67768C-817A-47C4-BB9C-6549F6B7E550} = {8F533580-8121-4F00-9C5C-FC8EAF167D95}
+		{F1F3CA3A-3D9F-40EB-9993-4D1AD6DB5A34} = {8F533580-8121-4F00-9C5C-FC8EAF167D95}
 	EndGlobalSection
 EndGlobal
