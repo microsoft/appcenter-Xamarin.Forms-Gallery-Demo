@@ -1,3 +1,7 @@
+# Main branch project build status
+- Android: [![Build status](https://build.appcenter.ms/v0.1/apps/01eaff43-f76e-4d4c-a33b-dcfc7f5ebd0d/branches/master/badge)](https://appcenter.ms/orgs/XTCTeam/apps/Kent-G.-Forms-Gallery-1/build/branches)
+- iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/95d03078-c216-418e-a1dc-f7f8338fb1e8/branches/master/badge)](https://appcenter.ms/orgs/XTCTeam/apps/Kent-G.-Forms-Gallery/build/branches)
+
 # Packages
 If the sample hasn't been updated for awhile and hits strange errors, it's highly recommended to try updating the following packages:
 - Xamarin.UITest in the Xamarin.UITest project
