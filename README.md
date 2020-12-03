@@ -1,3 +1,7 @@
+# Main branch project build status
+- Android: [![Build status](https://build.appcenter.ms/v0.1/apps/01eaff43-f76e-4d4c-a33b-dcfc7f5ebd0d/branches/main/badge)](https://appcenter.ms/orgs/XTCTeam/apps/Kent-G.-Forms-Gallery-1/build/branches)
+- iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/95d03078-c216-418e-a1dc-f7f8338fb1e8/branches/main/badge)](https://appcenter.ms/orgs/XTCTeam/apps/Kent-G.-Forms-Gallery/build/branches)
+
 # Packages
 If the sample hasn't been updated for awhile and hits strange errors, it's highly recommended to try updating the following packages:
 - Xamarin.UITest in the Xamarin.UITest project
@@ -39,26 +43,26 @@ This file contains methods which are shared across each and every Test Fixture l
 
 #### TestFixture required SetUp method
 This includes a required [SetUp] method called "BeforeEachTest()", which is executed _before each [Test]_:
-https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L100-L104
+https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L100-L104
 
 #### OpenPage(string page, int pageType)
 - *page* - pass a case-sensitive string for Xamarin.UITest to find on the main page of the app. UITest will tap the element to open the page or scroll down on the view if it's not found to see if it appears and then can tap it. 
 - *pageType* - Selects either "C# Pages" or "XAML Pages" in the UI before finding the specific page searched for.
 
-Source: https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L14-L31
+Source: https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L14-L31
 
 #### SetDatePicker(DateTime date)
 This method Invokes native Android & iOS methods on their respective platforms in order to update the DatePicker values.
 
 - *date* - Takes a standard "DateTime" value, though the method only works with Month, Day & Year; because those are what the Forms DatePickers are set up to work with. 
 
-Source: https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L34-L57
+Source: https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L34-L57
 
-Called by **ViewsforSettingValues.cs -> [Test] DatePicker()**: https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/ViewsForSettingValues.cs#L81-L93
+Called by **ViewsforSettingValues.cs -> [Test] DatePicker()**: https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/ViewsForSettingValues.cs#L81-L93
 
 #### SetTimePicker (int hour, int minute, bool am)
 Unlike `SetDatePicker` this method can't directly accept a DateTime, because it would require setting a day, month, & year when only the hour, minute & am/pm values are actually needed. This is worked around by using DateTime.Now within the method itself so that it can be handled in a somewhat similar fashion to the companion `SetDatePicker` method.
 
-- Source: https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L59-L98
+- Source: https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/HelperMethods.cs#L59-L98
 
-Called by **ViewsforSettingValues.cs -> [Test] TimePicker()**: https://github.com/King-of-Spades/AppCenter-Test-Samples/blob/master/Xamarin.UITest/FormsGallery/FormsGallery.UITest/ViewsForSettingValues.cs#L95-L107
+Called by **ViewsforSettingValues.cs -> [Test] TimePicker()**: https://github.com/King-of-Spades/appcenter-Xamarin.Forms-Gallery-Demo/blob/main/FormsGallery/FormsGallery.UITest/ViewsForSettingValues.cs#L95-L107

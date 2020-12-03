@@ -6,7 +6,7 @@
 AppCenter_Test_Command='paste upload command here'
 
 # Debugging upload command 
-# AppCenter_Test_Command='appcenter test run uitest --app "XTCTeam/Kent-G.-Forms-Gallery-1" --devices "XTCTeam/10-11-pixels-and-motorolas" --app-path pathToFile.apk --test-series "master" --locale "en_US" --build-dir pathToUITestBuildDir'
+# AppCenter_Test_Command='appcenter test run uitest --app "XTCTeam/Kent-G.-Forms-Gallery-1" --devices "XTCTeam/10-11-pixels-and-motorolas" --app-path pathToFile.apk --test-series "main" --locale "en_US" --build-dir pathToUITestBuildDir'
 
 # Step 2 Provide the (absolute or relative) path to the apk
 app_path='FormsGallery/FormsGallery.Android/bin/Debug/com.appcenter.formsgallery-Signed.apk'
