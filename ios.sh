@@ -5,6 +5,9 @@
 # Step 1 Generate an AppCenter upload command and paste it to the variable
 AppCenter_Test_Command='paste upload command here'
 
+# Debugging upload command 
+# AppCenter_Test_Command='appcenter test run uitest --app "XTCTeam/Kent-G.-Forms-Gallery" --devices "XTCTeam/12-dot-4-1-13-dot-7-all-devices" --app-path pathToFile.ipa --test-series "main" --locale "en_US" --build-dir pathToUITestBuildDir'
+
 # Step 2 Provide the (absolute or relative) path to the IPA
 app_path='FormsGallery/FormsGallery.iOS/bin/Debug/formsgallery.ipa'
 
